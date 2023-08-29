@@ -1,10 +1,11 @@
 package ke.co.banit.e_distributor_android.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 import ke.co.banit.e_distributor_android.databinding.ActivitySplashBinding
+import ke.co.banit.e_distributor_android.util.loadActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding:ActivitySplashBinding
@@ -15,6 +16,9 @@ class SplashActivity : AppCompatActivity() {
             setContentView(root)
         }
 
-        val handler = Handler(Looper.myLooper()!!)
+        Handler(Looper.getMainLooper()).postDelayed({
+            loadActivity(OnBoardActivity::class.java)
+            finish()
+        }, 3000)
     }
 }

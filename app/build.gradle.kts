@@ -72,7 +72,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
-
     // Picasso
     implementation("com.squareup.picasso:picasso:2.71828")
     implementation("jp.wasabeef:picasso-transformations:2.4.0")
@@ -195,4 +194,7 @@ dependencies {
 
     //Like anime
     implementation("pub.hanks:smallbang:1.2.2")
+
+    //OnBoarding
+    implementation("com.github.ErrorxCode:ModernOnboarding:v1.5")
 }

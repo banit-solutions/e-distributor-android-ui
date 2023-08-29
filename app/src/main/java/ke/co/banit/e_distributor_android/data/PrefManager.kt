@@ -56,4 +56,8 @@ class PrefManager {
     fun isDarkModeEnabled(): Boolean {
         return pref!!.getBoolean(KEY_DARK_MODE, false)
     }
+
+    fun setFirstTimeLaunch(b: Boolean) {
+
+    }
 }
