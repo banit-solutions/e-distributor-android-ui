@@ -2,4 +2,10 @@
     <string name="app_name">G-Loyal</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="status">
+        <item>Account Email</item>
+        <item>Account Information</item>
+        <item>Shop Information</item>
+    </array>
 </resources>

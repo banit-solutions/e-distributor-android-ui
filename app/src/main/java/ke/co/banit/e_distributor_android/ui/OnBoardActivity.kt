@@ -17,6 +17,7 @@ import ke.co.banit.e_distributor_android.R
 import ke.co.banit.e_distributor_android.core.adapters.OnBoardingAdapter
 import ke.co.banit.e_distributor_android.data.PrefManager
 import ke.co.banit.e_distributor_android.databinding.ActivityOnBoardBinding
+import ke.co.banit.e_distributor_android.util.loadActivity
 
 class OnBoardActivity : AppCompatActivity() {
     private lateinit var binding:ActivityOnBoardBinding
@@ -91,10 +92,10 @@ class OnBoardActivity : AppCompatActivity() {
 
     private fun launchHomeScreen(position: Int) {
         //checking if user is null
-        prefManager!!.setFirstTimeLaunch(false)
+        prefManager!!.setFirstTimeLaunch()
         if (position == 0) { //open sign up
-//            loadActivity(mContext, LoginActivity::class.java)
-//            finish()
+            loadActivity(GetStartedActivity::class.java)
+            finish()
         }
     }
 

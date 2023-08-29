@@ -111,6 +111,7 @@
             android:text="Sign In with Password"
             android:textAppearance="?textAppearanceBody1"
             android:textColor="@color/white"
+            android:id="@+id/btn.sign.in"
             app:cornerRadius="10dp" />
 
         <LinearLayout
@@ -129,6 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
+                android:id="@+id/txt.sign.up"
                 android:textAppearance="?textAppearanceBody2"
                 android:textColor="@color/secondaryColor"
                 app:fontFamily="@font/bold" />
