@@ -38,6 +38,18 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    kapt {
+        correctErrorTypes=true
+    }
+    hilt {
+        enableAggregatingTask = true
+    }
 }
 
 dependencies {
@@ -122,7 +134,7 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion")
     implementation ("androidx.room:room-runtime:$roomVersion")
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
-    //ksp("androidx.room:room-compiler:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
 
     //Dialog Libraries
     implementation("com.github.BantosBen:besid:1.0.2")
