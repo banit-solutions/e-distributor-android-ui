@@ -57,7 +57,11 @@ class PrefManager {
         return pref!!.getBoolean(KEY_DARK_MODE, false)
     }
 
-    fun setFirstTimeLaunch(b: Boolean) {
+    fun setFirstTimeLaunch() {
+        editor!!.putBoolean("is_first_time", false).apply()
+    }
 
+    fun isFirstTimeLaunch(): Boolean {
+        return pref!!.getBoolean("is_first_time", true)
     }
 }

@@ -5,3 +5,8 @@ data class ErrorResponse(
     val message: String,
     val exception: String
 )
+
+data class Category(
+    val drawableResource:Int,
+    val category:String
+)
