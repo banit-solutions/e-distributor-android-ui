@@ -197,4 +197,7 @@ dependencies {
 
     //OnBoarding
     implementation("com.github.ErrorxCode:ModernOnboarding:v1.5")
+
+    //Image Slider
+    implementation("com.github.smarteist:autoimageslider:1.4.0")
 }
