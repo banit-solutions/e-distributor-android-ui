@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card.product.image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorLightGrey"
+            app:tint="@null" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txt.product.name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Ajab Wheat Flour"
+        android:textAppearance="?textAppearanceBody2"
+        app:fontFamily="@font/bold"
+        app:layout_constraintTop_toBottomOf="@id/card.product.image" />
+
+    <TextView
+        android:id="@+id/txt.rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:text="4.5"
+        android:textAppearance="?textAppearanceBody2"
+        app:drawableStartCompat="@drawable/baseline_star_half"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt.product.name" />
+
+    <TextView
+        android:id="@+id/txt.product.price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Ksh. 1,000.00"
+        android:textAppearance="?textAppearanceBody2"
+        app:fontFamily="@font/bold"
+        app:layout_constraintTop_toBottomOf="@id/txt.rating" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="@id/card.product.image"
+        app:layout_constraintTop_toTopOf="@id/card.product.image"
+        app:cardCornerRadius="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_heart"
+            app:tint="@color/white"
+            android:layout_margin="6dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

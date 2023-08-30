@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/date.view"
+            android:layout_width="150dp"
+            android:layout_height="12dp"
+            app:cardBackgroundColor="@color/grey_400"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="0dp"
+            android:layout_marginTop="2dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date.view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/img.view.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/grey_400"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/img.view.1"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <!-- Middle shimmering bar -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardBackgroundColor="@color/grey_400"
+                        app:cardCornerRadius="32dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardBackgroundColor="@color/grey_400"
+                        app:cardCornerRadius="32dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false" />
+
+                    <!-- Bottom shimmering bars and icons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="56dp"
+                                android:layout_height="8dp"
+                                app:cardBackgroundColor="@color/grey_400"
+                                app:cardCornerRadius="32dp"
+                                app:cardElevation="0dp"
+                                app:cardUseCompatPadding="false" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="32dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="8dp"
+                                app:cardBackgroundColor="@color/grey_400"
+                                app:cardCornerRadius="32dp"
+                                app:cardElevation="0dp"
+                                app:cardUseCompatPadding="false" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/img.view.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/grey_400"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/img.view.2"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <!-- Middle shimmering bar -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardBackgroundColor="@color/grey_400"
+                        app:cardCornerRadius="32dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardBackgroundColor="@color/grey_400"
+                        app:cardCornerRadius="32dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false" />
+
+                    <!-- Bottom shimmering bars and icons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="56dp"
+                                android:layout_height="8dp"
+                                app:cardBackgroundColor="@color/grey_400"
+                                app:cardCornerRadius="32dp"
+                                app:cardElevation="0dp"
+                                app:cardUseCompatPadding="false" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="32dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="8dp"
+                                app:cardBackgroundColor="@color/grey_400"
+                                app:cardCornerRadius="32dp"
+                                app:cardElevation="0dp"
+                                app:cardUseCompatPadding="false" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
